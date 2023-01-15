@@ -1,4 +1,9 @@
-function nextPage() {
+function firstPage(){
+    document.getElementById("intro").innerHTML = "Hi! My name is Nathan and my full name is Gabrielle Jonathan Juanillo,  20 years of age living in Makati City. I was born on August 22, 2002. My hobbies are making music, playing video games, reading, listening to music and going out a lot.";
+
+}
+
+function secondPage() {
     document.getElementById("intro").innerHTML = "I graduated Senior High School in Treston International College Located at BGC, Taguig City. I'm currently a sophomore in Asia Pacific College taking Bachelor of Science in Computer Science specializing in Software and Systems. My goal in life is to finish my course and be able to work abroad while alsohaving a sidejob as a Music Producer.";
 
 }
