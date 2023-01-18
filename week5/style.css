@@ -53,6 +53,11 @@
         margin-right: auto;
     }
 
+    .pageNavi {
+        display: flex;
+        justify-content: center;
+    }
+
     .firstButton{
         align-items: center;
         background-color: rgba(147, 148, 161, 0.432);
@@ -63,7 +68,6 @@
         font-size: 18px;
         justify-content: center;
         cursor: pointer;
-        margin-left: 815px;
     }
 
     .firstButton:hover {
@@ -103,7 +107,7 @@
     .thirdButton:hover {
         background-color: rgba(84, 78, 173, 0.9);
         border-color: #404783;
-    }
+    }    
 
     .detailsButton {
         align-items: center;
@@ -125,10 +129,9 @@
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
-        width: 15%;
+        width: 280px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         letter-spacing: 4px;
     }
       
@@ -231,12 +234,6 @@
     text-shadow: 2px 2px 2px black;
     }
     
-    .poem {
-    color: yellow;
-    text-align: center;
-    font-family: verdana;
-    }
-    
     a {
     text-shadow: 2px 2px 5px black;
     }
@@ -268,20 +265,20 @@
     }
     /* CSS Comment */
     
-    .pfp {
+    /* .pfp {
     margin-left: 50px;
-    }
+    } */
     
     .introduction {
     margin-left: 20px;
     margin-right: 20px;
     }
     
-    .pfp {
+    /* .pfp {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    }
+    } */
     
     
     .contentHead {
@@ -295,21 +292,33 @@
     }
     
     .profile {
-    background-color: #666362;
-    background-image: url("Pictures/BgImgNoFilter.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    background-size: 2560px 1440px;
-    border-style: ridge;
-    border-color: #76746E;
-    border-width: 2px;
-    border-radius: 5px;
-    padding: 10px;
-    margin-left: 290px;
-    margin-right: 290px;
-    text-align: center;
+        background: #76746E url("Pictures/BgImgNoFilter.jpg") no-repeat center center;
+        background-size: cover;
+        padding: 15px;
+        margin: 0 auto;
+        width: fit-content;
+        border-radius: 5px;
+        text-align: center;
     }
+    
+
+
+    /* .profile {
+        background-color: #666362;
+        background-image: url("Pictures/BgImgNoFilter.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: scroll;
+        background-size: cover;
+        border-color: #76746E;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
+    } */
     
     .introduction{
         background-color: #31334ba1;
@@ -324,7 +333,7 @@
         line-height: 25px;
     }
     
-    .pfpCard {
+    /* .pfpCard {
     background-color: #666362;
     background-image: url("Pictures/pfpCardBG.jpg");
     background-repeat: no-repeat;
@@ -339,6 +348,96 @@
     border-color: #404783;
     border-width: 4px;
     border-radius: 5px;
+    } */
+
+    .pfpCard {
+        background-color: #666362;
+        background-image: url("Pictures/pfpCardBG.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        border: 4px solid #404783;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 800px;
+    }
+
+    .emailForm {
+        background-color: #666362;
+        background-image: url("Pictures/pfpCardBG.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        border: 4px solid #404783;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 800px;
+    }
+
+    .emailForm label {
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 21px;
+        font-weight: 450;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        line-height: 25px;
+    }
+      
+    .emailForm input, .emailForm textarea {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: 40px;
+        padding: 10px;
+        text-indent: 20px;
+        background-color: rgb(255, 255, 255);
+        border-style: hidden;
+        border-radius: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+    }
+
+    #message {
+        width: 50%;
+        height: 200px; 
+        font-size: 20px;
+        padding: 20px; 
+        border-radius: 10px;
+        box-sizing: border-box; 
+    }
+
+
+    .submit {
+        align-items: center;
+        background-color: rgba(147, 148, 161, 0.432);
+        border: 1px solid #ffffff;
+        border-radius: 6px;
+        color: #050505;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 18px;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .submit:active,
+    .submit:hover {
+        outline: 0;
+    }
+
+    .submit:hover {
+        background-color: rgba(84, 78, 173, 0.9);
+        border-color: #404783;
     }
     
     footer {

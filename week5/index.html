@@ -56,15 +56,33 @@
 			and going out a lot.
 			</p>
 			</h3>
+			<br>
 
 			<div class="pageNavi">
-				<button class="firstButton" role="button" onclick="firstPage()">1</button>
-				<button class="secondButton" role="button" onclick="secondPage()">2</button>
+				<button class="firstButton" role="button" onclick="firstPage()">1</button> &nbsp;
+				<button class="secondButton" role="button" onclick="secondPage()">2</button> &nbsp;
 				<button class="thirdButton" role="button" onclick="thirdPage()">3</button>
 			</div>
 			<br>
 			<br>
-			<button class="detailsButton" role="button" id="email" onclick="giveNotice()"> Send an Email</button>
+			<button class="detailsButton" role="button" id="email" onclick="showForm()">Send an Email</button>
+
+			<form class="emailForm" id="email-form" style="display:none;">
+				<label for="subject">Subject:</label>
+				<input type="text" id="subject" name="subject">
+			  
+				<label for="email">Email:</label>
+				<input type="text" id="email" name="email">
+				<br>
+				<br>
+				<div class="emailContent">
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+				<br>
+				<br>
+				<input class="submit" type="submit" value="Submit">
+				</div>
+			</form>
 
 
 		</main>

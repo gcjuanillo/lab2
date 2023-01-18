@@ -15,3 +15,8 @@ function thirdPage() {
 function giveNotice() {
     window.alert("This button is still on progress!")
 }
+
+function showForm() {
+    document.getElementById("email-form").style.display = "block";
+    document.getElementById("email").style.display = "none";
+  }
