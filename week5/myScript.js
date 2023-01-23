@@ -40,10 +40,7 @@ function startTypingAnimation() {
         startTypingAnimation("I'm Nathan, Welcome to my Personal page!", 100);
       };
 
-// Get a reference to the body element
 var body = document.getElementsByTagName("body")[0];
-
-// Create a function to generate a random number between min and max
 function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
