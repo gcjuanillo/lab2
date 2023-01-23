@@ -33,7 +33,7 @@ function startTypingAnimation() {
     }
     }
 
-    var intervalId = setInterval(updateText, 70);
+    var intervalId = setInterval(updateText, 100);
     }
 
     window.onload = function() {
@@ -48,21 +48,26 @@ function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-setInterval(function() {
-  var drop = document.createElement("div");
-  drop.classList.add("drop");
-  drop.style.left = randomInt(0, window.innerWidth) + "px";
-  drop.style.top = "-50px";
-  drop.style.width = randomInt(3, 4) + "px";
-  drop.style.height = randomInt(7, 15) + "px";
-  drop.style.background = "#00BFFF";
-  body.appendChild(drop);
-  var fallingInterval = setInterval(function() {
-    drop.style.top = parseInt(drop.style.top) + 5 + "px";
-    if (parseInt(drop.style.top) > window.innerHeight) {
-      body.removeChild(drop);
-      clearInterval(fallingInterval);
-    }
-  }, 30);
+function createRain() {
+    setInterval(function() {
+      var drop = document.createElement("div");
+      drop.classList.add("drop");
+      drop.style.left = randomInt(0, window.innerWidth) + "px";
+      drop.style.top = "-50px";
+      drop.style.width = randomInt(3, 4) + "px";
+      drop.style.height = randomInt(7, 15) + "px";
+      drop.style.background = "#00BFFF";
+      body.appendChild(drop);
+      var fallingInterval = setInterval(function() {
+        drop.style.top = parseInt(drop.style.top) + 5 + "px";
+        if (parseInt(drop.style.top) > window.innerHeight) {
+          body.removeChild(drop);
+          clearInterval(fallingInterval);
+        }
+      }, 30);
+    }, 30);
+  }
 
-}, 30);
+function makeRain() {
+    createRain();
+}

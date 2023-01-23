@@ -47,7 +47,11 @@
 			<h1 class="contentHead"> About </h1>
 			<br>
 			<br>
-			
+			<div class="surpButton">
+			<button class="surpriseButton" role="button" onclick="makeRain()">Surprise button</button>
+			</div>
+			<br>
+			<br>
 			<h3 class= "pfpCard">
 			<p class="profile"> <img class="pfp" src="Pictures/Pfp.jpg" alt="Profile" width = "300" height = "300"> </p>
 			<p class="introduction" id="intro"> 
@@ -66,7 +70,7 @@
 			<div id="typewriter" class="welcomeText"></div>
 			<br>
 			<br>
-			<button class="detailsButton" role="button" id="email" onclick="showForm()">Send an Email</button>
+			<button class="detailsButton" role="button" id="email" onclick="showForm();makeRain()">Send an Email</button>
 
 			<form class="emailForm" id="email-form" style="display:none;">
 				<label for="subject">Subject:</label>
