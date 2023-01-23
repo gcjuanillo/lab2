@@ -20,3 +20,29 @@ function showForm() {
     document.getElementById("email-form").style.display = "block";
     document.getElementById("email").style.display = "none";
   }
+
+function startTypingAnimation() {
+    // text reference
+    var text = "If you are interested in reaching me out, send me and email by clicking this button";
+
+    // Get a reference to the element where the text will be displayed
+    var el = document.getElementById("typewriter");
+
+    // Initialize a variable to keep track of the current index in the text
+    var index = 0;
+
+    // Use a function to update the text and call it using setInterval
+    function updateText() {
+    el.innerHTML += text[index];
+    index++;
+    if (index > text.length - 1) {
+        clearInterval(intervalId);
+    }
+    }
+
+    var intervalId = setInterval(updateText, 70);
+    }
+
+    window.onload = function() {
+        startTypingAnimation("I'm Nathan, Welcome to my Personal page!", 100);
+      };

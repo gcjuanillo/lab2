@@ -53,6 +53,30 @@
         margin-right: auto;
     }
 
+    .welcomeText {
+        padding: 10px;
+        border-style: hidden;
+        border-radius: 15px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 21px;
+        font-weight: 450;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        line-height: 25px;
+        text-align: center;
+      }
+
+    /* .welcomeText {
+        border-style: hidden;
+        border-radius: 15px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 21px;
+        font-weight: 450;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        line-height: 25px;
+    } */
+
     .pageNavi {
         display: flex;
         justify-content: center;
@@ -401,7 +425,7 @@
         height: 40px;
         padding: 10px;
         text-indent: 20px;
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.671);
         border-style: hidden;
         border-radius: 15px;
         font-family: 'Times New Roman', Times, serif;
@@ -421,23 +445,30 @@
     .submit {
         align-items: center;
         background-color: rgba(147, 148, 161, 0.432);
-        border: 1px solid #ffffff;
+        border: 1px solid #070707;
         border-radius: 6px;
         color: #050505;
         font-family: 'Quicksand', sans-serif;
-        font-size: 18px;
         justify-content: center;
         cursor: pointer;
     }
 
     .submit:active,
     .submit:hover {
-        outline: 0;
+        outline: 1px;
     }
 
     .submit:hover {
         background-color: rgba(84, 78, 173, 0.9);
         border-color: #404783;
+        border: 1px solid #ffffff;
+        color:rgba(255, 255, 255, 0.9)
+    }
+
+    .copyright {
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 2px 2px #050505;
     }
     
     footer {
