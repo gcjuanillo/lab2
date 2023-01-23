@@ -22,16 +22,9 @@ function showForm() {
   }
 
 function startTypingAnimation() {
-    // text reference
     var text = "If you are interested in reaching me out, send me and email by clicking this button";
-
-    // Get a reference to the element where the text will be displayed
     var el = document.getElementById("typewriter");
-
-    // Initialize a variable to keep track of the current index in the text
     var index = 0;
-
-    // Use a function to update the text and call it using setInterval
     function updateText() {
     el.innerHTML += text[index];
     index++;
@@ -46,3 +39,41 @@ function startTypingAnimation() {
     window.onload = function() {
         startTypingAnimation("I'm Nathan, Welcome to my Personal page!", 100);
       };
+
+// Get a reference to the body element
+var body = document.getElementsByTagName("body")[0];
+
+// Create a function to generate a random number between min and max
+function randomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+// Use setInterval to create new drops every 30 milliseconds
+setInterval(function() {
+  // Create a new div element
+  var drop = document.createElement("div");
+  drop.classList.add("drop");
+
+  // Set a random position and size for the drop
+  drop.style.left = randomInt(0, window.innerWidth) + "px";
+  drop.style.top = "-50px";
+  drop.style.width = randomInt(3, 8) + "px";
+  drop.style.height = randomInt(10, 25) + "px";
+  drop.style.background = "#00BFFF";
+
+  // Add the drop to the body element
+  body.appendChild(drop);
+
+  // Use setInterval to animate the falling of the drop
+  var fallingInterval = setInterval(function() {
+    // Update the top position of the drop
+    drop.style.top = parseInt(drop.style.top) + 5 + "px";
+
+    // Remove the drop from the body if it falls out of the screen
+    if (parseInt(drop.style.top) > window.innerHeight) {
+      body.removeChild(drop);
+      clearInterval(fallingInterval);
+    }
+  }, 30);
+
+}, 30);
