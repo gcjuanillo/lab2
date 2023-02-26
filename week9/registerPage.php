@@ -80,7 +80,7 @@
                 <input type="password" id="passwordCon" name="passwordCon" value placeholder="Confirm Password">
                 <br>
                 <br>
-                <a class="login" href="#"><button class="loginButton">Sign in</button></a>
+                <a class="login" href="registeredAccount.php"><button class="loginButton">Sign in</button></a>
             </form>
             <p class="signUp">Already Registered? <a class="register" href="loginTemplate.html">Sign in</a></p>
             
