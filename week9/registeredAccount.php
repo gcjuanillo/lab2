@@ -23,10 +23,10 @@
             <p class="text-center">Be a part of the community by registering below!</p>
 
             <?php
-                $servername = "localhost";
-                $username = "root";
-                $password = "09239446562Gj";
-                $dbname = "registration";
+                $servername = "192.168.150.213";
+                $username = "webprogmi212";
+                $password = "b3ntRhino98";
+                $dbname = "webprogmi212";
 
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -35,7 +35,7 @@
                 die("Connection failed: " . $conn->connect_error);
                 }
 
-                $sql = "SELECT lName, fName, mName, nName, email FROM userAcc";
+                $sql = "SELECT lName, fName, mName, nName, email FROM juanillo_userAcc";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {

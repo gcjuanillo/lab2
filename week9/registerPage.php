@@ -104,10 +104,10 @@
             <?php
 
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $servername = "localhost";
-                $username = "root";
-                $password = "09239446562Gj";
-                $dbname = "registration";
+                $servername = "192.168.150.213";
+                $username = "webprogmi212";
+                $password = "b3ntRhino98";
+                $dbname = "webprogmi212";
 
                 // Create connection
                 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -116,7 +116,7 @@
                 die("Connection failed: " . $conn->connect_error);
                 }
 
-                $sql = "INSERT INTO userAcc (lName, fName, mName, nName, email, userPass, cPassword)
+                $sql = "INSERT INTO juanillo_userAcc (lName, fName, mName, nName, email, userPass, cPassword)
                 VALUES ('$lastName', '$firstName', '$middleName', '$nickname', '$email', '$password', '$passwordCon')";
 
                 if ($conn->query($sql) === TRUE) {
