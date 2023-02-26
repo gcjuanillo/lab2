@@ -29,6 +29,8 @@
     $email = test_input($_POST["email"]);
     $password = test_input($_POST["password"]);
     $passwordCon = test_input($_POST["passwordCon"]);
+    
+    header("Location: registeredAccount.php");
     }
 
     function test_input($data) {
@@ -80,7 +82,7 @@
                 <input type="password" id="passwordCon" name="passwordCon" value placeholder="Confirm Password">
                 <br>
                 <br>
-                <a class="login" href="registeredAccount.php"><button class="loginButton">Sign in</button></a>
+                <button class="loginButton">Sign up</button>
             </form>
             <p class="signUp">Already Registered? <a class="register" href="loginTemplate.html">Sign in</a></p>
             

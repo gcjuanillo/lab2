@@ -36,6 +36,11 @@ body {
     font-family: 'Archivo', sans-serif;
     font-weight: 500;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
 }
 
 .loginButton:hover {
